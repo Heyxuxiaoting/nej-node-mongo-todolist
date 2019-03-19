@@ -1,0 +1,60 @@
+{
+  "name": "nej-node-mongo-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint --fix ./client",
+    "devserver": "nodemon ./app.js --ignore client/",
+    "devclient": "webpack-dev-server --config webpack.dev.config.js --open",
+    "start": "webpack --config webpack.prod.config.js && node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heyxuxiaoting/nej-node-mongo-todolist.git"
+  },
+  "author": "xuting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heyxuxiaoting/nej-node-mongo-todolist/issues"
+  },
+  "homepage": "https://github.com/Heyxuxiaoting/nej-node-mongo-todolist#readme",
+  "dependencies": {
+    "antd": "^3.15.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "ejs": "^2.6.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.5",
+    "mongoose": "^5.4.19",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.2",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import": "^1.11.0",
+    "css-loader": "^0.28.11",
+    "ejs-loader": "^0.3.1",
+    "eslint": "^5.15.3",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.10",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
